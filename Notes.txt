@@ -1,0 +1,40 @@
+::Brainstorming::
+A way to have secret recipes
+store usernames and password and minimal personal info
+a way to shop for recipes and multiple recipes
+a way to shop for an occasion
+visibility control
+make occasions 
+a place to store ingredients and instructions
+
+
+::Table Ideas::
+users table:
+user_id
+email address
+password
+first name
+last name
+
+one to one | users to recipes
+one to many | recipes to food_for_occasion
+recipes table:
+recipe_id
+recipe name
+user_id
+ingredients
+instructions
+visability boolean
+
+one to one | users to occasion
+one to many | recipes to food_for_occasion
+occasions table:
+occasion_id
+occasion name
+user_id
+
+
+food_for_occasion
+food_for_occasion_id
+recipe_id 
+occasion_id
